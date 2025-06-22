@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos | Portfólio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">Portfólio</div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="sobre.html">SOBRE</a></li>
+        <li><a href="projetos.html" class="active">PROJETOS</a></li>
+        <li><a href="contato.html">CONTATO</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="projects-main">
+    <div class="section-header">
+      <h1>Meus <span>Projetos</span></h1>
+      <p>Alguns dos trabalhos que desenvolvi ao longo da minha jornada</p>
+    </div>
+
+    <div class="projects-filter">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="mobile">Mobile</button>
+      <button class="filter-btn" data-filter="design">Design</button>
+    </div>
+
+    <div class="projects-grid">
+      <!-- Projeto 1 -->
+      <div class="project-card" data-category="web">
+        <div class="project-image">
+          <img src="img/projeto1.jpg" alt="Website Corporativo">
+          <div class="project-overlay">
+            <a href="#" class="view-btn">Ver Detalhes</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Website Corporativo</h3>
+          <p>Site responsivo para empresa local com dashboard administrativo.</p>
+          <div class="project-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projeto 2 -->
+      <div class="project-card" data-category="mobile">
+        <div class="project-image">
+          <img src="img/projeto2.jpg" alt="App de Tarefas">
+          <div class="project-overlay">
+            <a href="#" class="view-btn">Ver Detalhes</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>App de Tarefas</h3>
+          <p>Aplicativo para gerenciamento de tarefas pessoais com sincronização em nuvem.</p>
+          <div class="project-tags">
+            <span>React Native</span>
+            <span>Firebase</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projeto 3 -->
+      <div class="project-card" data-category="design">
+        <div class="project-image">
+          <img src="img/projeto3.jpg" alt="Identidade Visual">
+          <div class="project-overlay">
+            <a href="#" class="view-btn">Ver Detalhes</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Identidade Visual</h3>
+          <p>Criação de marca completa para startup de tecnologia.</p>
+          <div class="project-tags">
+            <span>Adobe XD</span>
+            <span>Illustrator</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projeto 4 (exemplo vazio para novos projetos) -->
+      <div class="project-card" data-category="web">
+        <div class="project-image">
+          <img src="img/placeholder.jpg" alt="Novo Projeto">
+          <div class="project-overlay">
+            <a href="#" class="view-btn">Em Breve</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Novo Projeto</h3>
+          <p>Descrição do projeto que será adicionado em breve.</p>
+          <div class="project-tags">
+            <span>Tecnologias</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-social">
+      <a href="https://linkedin.com/in/eltonsk2" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/ELTONSK2" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/eltonbatista63" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2025 Portfólio | Elton R Batista</p>
+  </footer>
+
+  <button id="btnTopo" title="Voltar ao topo">↑</button>
+
+  <script src="js/main.js"></script>
+  <script src="js/projects-filter.js"></script>
+</body>
+
+</html>
